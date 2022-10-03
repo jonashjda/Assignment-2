@@ -2,7 +2,7 @@ import operator
 import pandas as pd
 from operator import itemgetter
 
-df = pd.read_csv('assignments\Assignment 2\Task 2\horoscopes.csv')
+df = pd.read_csv('horoscopes.csv')
 
 signs = list(set(df['sign'].values))
 
