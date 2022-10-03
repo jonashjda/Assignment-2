@@ -9,7 +9,7 @@ from operator import itemgetter
 ## Loading the horoscopes
 Then, the file is imported by using the CSV module, and the horoscopes from three selected signs are set as variables named according to said sign
 ```python
-df = pd.read_csv('assignments\Assignment 2\Task 2\horoscopes.csv')
+df = pd.read_csv('horoscopes.csv')
 
 signs = list(set(df['sign'].values))
 
