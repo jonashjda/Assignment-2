@@ -46,22 +46,6 @@ def word_count(text, sort = True, stopword=True):
 
     return counter
 
-# def list_to_dtm(corpus, stopword=True):
-#     wc = word_count(' '.join(corpus), stopword=stopword)
-#     lexicon = list(wc.keys())
-
-#     dtm = []
-#     for content in corpus:
-#         document = [0 for _ in lexicon]
-#         wc = word_count(content, stopword=stopword)
-#         for (i, word) in enumerate(lexicon):
-#             if word in wc:
-#                 document[i] = wc[word]
-
-#         dtm.append(document)
-
-#     return dtm, lexicon
-
 wc_virgo = word_count(' '.join(virgo_texts))
 virgo_items = wc_virgo.items()
 virgo_list = list(virgo_items)[:200]
